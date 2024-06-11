@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+}
+
+:root {
+  --cor-pricipal: white;
+
+
+  --font_greatVibes: font-family: "Great Vibes", cursive;
+}
+
+body {
+  background-image: linear-gradient(80deg, #FF7D29, #FFBF78, #FFEEA9);
+  background-repeat: no-repeat;
+}
+
+html {
+    height: 100vh;
+}
+
+.container_header {
+    display: flex;
+    background-color: #000000;
+    justify-content: space-around;
+    width: 100%;
+    padding: 0 3%;
+    align-items: center;
+}
+
+.logomarca img{
+    width: 12em;
+    height: 5em;
+}
+
+nav {
+   width: 50%;
+}
+.ul_menu {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.ul_menu li {
+    list-style-type: none;
+}
+
+.ul_menu li a{
+    color: var(--cor-pricipal);
+    font-size: 1.2em;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.ul_menu li a:hover{
+    color: #FF7D29;
+}
+
+.sub_menu {
+    display: none;
+    position: absolute;
+    left: 45%;
+    top: 86px;
+}
+
+.menu_pecas li{
+    height: 45px;
+    background-color: var(--cor-pricipal);
+    border: 1px solid rgb(202, 202, 202);
+    text-align: center;
+    padding: 0.5em 1em;
+}
+
+.menu_pecas li:hover{
+    background-color: #e0e0e0;
+}
+
+.menu_pecas li a {
+    color: #3d3a3a;
+    font-size: 1.1em;
+}
+
