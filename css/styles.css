@@ -10,19 +10,20 @@
 
 :root {
   --cor-pricipal: white;
+  --cor-lgradient: linear-gradient(80deg, #FF7D29, #FFBF78, #FFEEA9, #FFBF78, #FF7D29);
+  --cor-laranja: #FF7D29;
+  --cor-cinzar: #e6e6e6;
 
 
   --font_greatVibes: font-family: "Great Vibes", cursive;
 }
 
 body {
-  background-image: linear-gradient(80deg, #FF7D29, #FFBF78, #FFEEA9);
+  background-image: var(--cor-lgradient);
   background-repeat: no-repeat;
+  height: 100%;
 }
 
-html {
-    height: 100vh;
-}
 
 .container_header {
     display: flex;
@@ -59,7 +60,7 @@ nav {
 }
 
 .ul_menu li a:hover{
-    color: #FF7D29;
+    color: var(--cor-laranja);
 }
 
 .sub_menu {
@@ -86,3 +87,63 @@ nav {
     font-size: 1.1em;
 }
 
+/*-------------------------------  main--------------------------------*/
+
+.main_container {
+    width: 100%;
+}
+
+.banner_inicio {
+    background-image: url(https://pizarromoveis.com.br/wp-content/uploads/2019/08/rockburger_vilavelha_es05.jpg);
+    width: 100%;
+    min-height: 600px;
+    box-shadow: inset 0 0 100px 80px hwb(0 14% 86%);
+}
+
+.titulo_banner {
+    padding: 20px 20px;
+    width: 40%;
+    font-size: 1.5em;
+    color: var(--cor-pricipal);
+    transform: translate(100%, 80%);
+    background-color: #000000b6;
+    border-radius: 20px;
+    font-weight: 400;
+    box-shadow: 0 0 8px 15px #000000b6;
+}
+
+.titulo_banner h2 {
+    line-height: 45px;
+}
+
+.mega_lanches img {
+    border-radius: 180px;
+}
+
+.mega_lanches{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    gap: 0 50px;
+}
+
+.cardapio_titulo {
+    width: 40%;
+    padding: 25px;
+    background-color: var(--cor-cinzar);
+    border-radius: 25px;
+}
+.mega_lanches h2 {
+    margin-bottom: 15px;
+    font-weight: 900;
+    color: #b32727;
+    font-size: 1.5em;
+}
+
+.mega_lanches p {
+    font-size: 1em;
+    font-weight: 500;
+    color: rgb(26, 26, 26);
+    
+}
